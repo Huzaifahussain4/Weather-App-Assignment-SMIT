@@ -12,6 +12,8 @@ let wind = document.getElementById("windDiv");
 let cloud = document.getElementById("cloudDiv");
 let UVIndex = document.getElementById("UVIndexDiv");
 let feelsTemp = document.getElementById("feelsTempDiv");
+let longitude = document.getElementById("longitudeDiv");
+let latitude = document.getElementById("latitudeDiv");
 
 searchValue.addEventListener("click", () => {
   let inputValue = searchInput.value;
@@ -40,6 +42,8 @@ searchValue.addEventListener("click", () => {
       cloud.innerHTML = data.current.cloud;
       UVIndex.innerHTML = data.current.uv;
       feelsTemp.innerHTML = data.current.feelslike_c;
+      latitude.innerHTML = data.location.lat;
+      longitude.innerHTML = data.location.lon;
     });
 
   async function getWeatherData(city) {

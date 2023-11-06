@@ -115,7 +115,13 @@
 .weatherDes {
     color: #ffffff;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    
+}
 
+.weatherDes > div{
+    padding-left: 10px;
 }
 
 .forcastDiv {
