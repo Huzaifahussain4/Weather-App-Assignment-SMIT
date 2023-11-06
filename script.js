@@ -48,7 +48,7 @@ searchValue.addEventListener("click", () => {
 
   async function getWeatherData(city) {
     const apiKey = "ab32a1cadd734098b0243146230111";
-    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=5`;
+    const apiUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=7`;
 
     try {
       const response = await fetch(apiUrl);
