@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="firstdiv">
+        <div class="firstSecDiv">
+          <div class="searchNlocationDiv">
+            <div class="locationDiv">
+              <i class="fa-solid fa-location-dot locationIcon"></i>
+              <div id="locationTitle">City</div>
+              /
+              <div id="regionTitle">country</div>
+            </div>
+            <div class="searchInput">
+              <input
+                type="text"
+                placeholder="Search Location"
+                id="searchInput"
+              />
+              <button id="search" class="searchBtn">search</button>
+            </div>
+          </div>
+
+          <div class="deatilTxtDiv">
+            <div>
+              <!-- <div class="weatherType">Weather format</div> -->
+              <div class="forcastDiv" id="forCastText">overcast cloudy</div>
+              <!-- <div class="weatherDes">the low temperature</div> -->
+            </div>
+            <div class="forCastIcon" id="forCastIconDiv">
+              <!-- <img src="./143.webp" alt="" /> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="secondSecDiv">
+          <div class="fiveDaysForcast">5 Day Forcast</div>
+          <div id="weather-container" class="weatherContainerDiv"></div>
+          <!-- <div class="UVWC"></div>
+          <div class="UVWC"></div>
+          <div class="UVWC"></div>
+          <div class="UVWC"></div> -->
+        </div>
+      </div>
+
+      <div class="secondMainConatiner">
+        <div class="tempDiv">
+          <div class="dateTime" id="dateTimeDiv">2023-11-05 1:03</div>
+          <div class="tempNumbers">
+            <div id="tempNumbersConatiner">0</div>
+            <div>&#176;</div>
+          </div>
+          <div class="dateTime">
+            Feels Like
+            <div class="feelsLikeDiv"> <div id="feelsTempDiv">0</div><div>&#176;</div></div>
+          </div>
+        </div>
+        <div class="tempChildDiv">
+          <div class="tempFeatures">Humidity</div>
+          <div class="tempFeaturesNumber">
+            <i class="fa-solid fa-water"></i>
+            <div class="tempFeaturesNumberDiv" id="humidityDiv">45</div>
+            <span>%</span>
+          </div>
+        </div>
+        <div class="tempChildDiv">
+          <div class="tempFeatures">Wind</div>
+          <div class="tempFeaturesNumber">
+            <i class="fa-solid fa-wind"></i>
+            <div class="tempFeaturesNumberDiv" id="windDiv">45</div>
+            <span>Km/P</span>
+          </div>
+        </div>
+        <div class="tempChildDiv">
+          <div class="tempFeatures">Cloud</div>
+          <div class="tempFeaturesNumber">
+            <i class="fa-solid fa-cloud"></i>
+            <div class="tempFeaturesNumberDiv" id="cloudDiv">45</div>
+            <span>%</span>
+          </div>
+        </div>
+        <div class="tempChildDiv">
+          <div class="tempFeatures">UV Index</div>
+          <div class="tempFeaturesNumber">
+            <i class="fa-solid fa-sun"></i>
+            <div class="tempFeaturesNumberDiv" id="UVIndexDiv">45</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="weather-container"> -->
+    <!-- Weather data will be displayed here -->
+    <!-- </div> -->
+    <script src="./script.js"></script>
+  </body>
+</html>

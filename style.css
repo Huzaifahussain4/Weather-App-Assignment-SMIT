@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 3% 4%;
+    background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2072&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.firstdiv {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.firstSecDiv {
+    height: 35vh;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.12); */
+    background: linear-gradient(15deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.01) 50%, rgba(255, 255, 255, 0.15) 100%);
+
+    backdrop-filter: blur(5px);
+    /* Use backdrop-filter for blur effect */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.searchNlocationDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.searchInput>input {
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    color: #ffffff;
+    outline: none;
+}
+
+.searchBtn {
+    font-size: 17px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+    transition: 0.3S;
+}
+
+.searchBtn:hover {
+    background-color: #d5d5d5;
+}
+
+.locationDiv {
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.locationIcon {
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+.deatilTxtDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weatherType {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.weatherDes {
+    color: #ffffff;
+    font-size: 20px;
+
+}
+
+.forcastDiv {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+
+.forCastIcon {
+    width: 100px;
+    height: 100px;
+    /* background-color: aqua; */
+}
+
+.forCastIcon>img {
+    width: 100%;
+    height: 100%;
+}
+
+.secondSecDiv {
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(15deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.01) 50%, rgba(255, 255, 255, 0.15) 100%);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 30px;
+    border-radius: 10px;
+    /* margin-bottom: 25px; */
+}
+
+.weatherContainerDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.fiveDaysForcast {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.daysWeatherDiv {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 150px;
+    height: 30vh;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dayNameDiv {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 2px;
+}
+
+.dayDiv {
+    padding: 2px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+}
+
+.secondMainConatiner {
+    width: 32%;
+    height: 88vh;
+    border-radius: 10px;
+    background: linear-gradient(15deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.01) 50%, rgba(255, 255, 255, 0.15) 100%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.tempDiv {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 30vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.tempChildDiv {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 10vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.tempNumbers {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 800;
+    margin-left: 20px;
+    display: flex;
+}
+
+.dateTime {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+}
+
+.feelsLikeDiv {
+    margin-left: 10px;
+    display: flex;
+}
+
+.tempFeatures {
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 0;
+}
+
+.tempFeaturesNumber {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+}
+
+.tempFeaturesNumber>i {
+    font-size: 25px;
+}
+
+.tempFeaturesNumberDiv {
+    padding: 0 5px 0 20px;
+}
